@@ -6,9 +6,9 @@
 
     <div class="example">Див с class="example".</div>
 
-    <div class="example">Див с class="example".</div>
+    <div class="">Див с class="example".</div>
 
-    <p class="example">Работает только с IE9 и выше!</p>
+    <p class="">Работает только с IE9 и выше!</p>
 
     <button onclick="myFunction()">Пробовать</button>
 
@@ -17,6 +17,7 @@
             var example = document.getElementsByClassName("example");
             // example[0].innerHTML = "Hello World!";
             // example[1].innerHTML = "Привет Мир!";
+            console.log(example);
 
             for (var i = example.length - 1; i >= 0; i--) {
                 example[i].innerHTML = 'Hello World';

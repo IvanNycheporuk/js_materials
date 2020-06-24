@@ -1,5 +1,5 @@
 ﻿<!--
-    Переменная, доступная внутри функции и содержащая ее аргументы. У нее есть свойство length, в котором хранится количество аргументов, переданых функции.
+    arguments - Переменная, доступная внутри функции и содержащая ее аргументы. У нее есть свойство length, в котором хранится количество аргументов, переданых функции.
 -->
 
 <html>
@@ -12,7 +12,6 @@
 
             var maxValue = Number.NEGATIVE_INFINITY;
             console.log("Number.NEGATIVE_INFINITY = " + maxValue);
-
             console.log(arguments);
 
             for (var i = 0; i < arguments.length; i++) {
@@ -21,7 +20,6 @@
                 }
             }
             return maxValue;
-
         }
 
         var result = max(-33, 33, 777, -650, 943, -22);
