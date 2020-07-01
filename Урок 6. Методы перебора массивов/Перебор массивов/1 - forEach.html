@@ -14,16 +14,22 @@ arr – массив, который перебирается -->
 </head>
 <body>
 <script type="text/javascript">
+	// var test = {
+	// 	forTest: function() {
+
+	// 	}
+	// }
+
+	// test.forTest()
+	
 	var arr = ["Яблоко", "Апельсин", "Груша"];
-	arr.forEach(function(item) {
-		document.write(item + '<br>');
-	});
+	
+	var showResults1 = function(item, index, arr) {
+		//document.write(item + '<br>');
+		console.log(item, index, arr);
+	}
 
-	var sortedArr = arr.filter(function(item) {
-		return item == "Яблоко";
-	})
-
-	console.log(sortedArr);
+	arr.forEach(showResults1); // 
 
 	// for (var i = 0; i < arr.length; i++) {
 	// 	document.write(arr[i] + '<br>');

@@ -76,23 +76,27 @@ document.write( result );
 <script>
 	
 	var orders = [
-		{ amount: 250 },
-		{ amount: 400 },
-		{ amount: 100 },
-		{ amount: 325 }
-	]
+		{ amount: 250, name: 'test1' },
+		{ amount: 400, name: 'test2' },
+		{ amount: 100, name: 'test3' },
+		{ amount: 325, name: 'test4' }
+	]		
+		// var totalAmount = 0;
+		// for (var i = 0; i < orders.length; i++) {
+		// 	totalAmount += orders[i].amount;
+		// }
 
 	var totalAmount = orders.reduce(function(sum, order) {
 		return sum + order.amount;
 	}, 0);
 
-		
-		// var totalAmount = 0
-		// for (var i = 0; i < orders.length; i++) {
-		// 	totalAmount += orders[i].amount;
-		// }
 
-	console.log(totalAmount)
+	var totalSum = 0;
+	orders.forEach(function(item) {
+		totalSum += item.amount
+	});
+
+	console.log(totalSum);
 	
 </script>
 </body>
