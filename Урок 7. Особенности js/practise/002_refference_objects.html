@@ -18,19 +18,29 @@
 			lastName:"Doe", 
 			age:50, 
 			eyeColor:"blue"
-		}
+		}		
 
-		var x = person;
-		x.age = 10;
+		var x = {...person};
+
+		// var x = {
+		// 	firstName:"John", 
+		// 	lastName:"Doe", 
+		// 	age:50,
+		// 	eyeColor:"blue"
+		// }
+		//x.age = 10;
+
+		console.log('x.age ' + x.age, 'person.age ' + person.age);
+
+		console.log('x === person', x === person);
 
 		var test = "someTest";
-
-		test = "someOtherTest";
-		console.log(test);
+		var test2 = test;
+		test2 = 'asdasdasd';
+		console.log('test: ' + test, 'test2: ' + test2);
 
 		document.getElementById("demo").innerHTML =
 		person.firstName + " is " + person.age + " years old.";
-
 
 		// Примечание: переменные JavaScript не изменяются. Только объекты JavaScript.
 	</script>

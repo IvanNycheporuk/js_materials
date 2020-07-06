@@ -8,7 +8,28 @@
 		 
 		<!-- В обработчиках событий HTML this относится к элементу HTML, который получил событие: -->
 		
-		<button onclick="this.style.display = 'none';">Click to Remove Me!</button>
+		<button id="btn">Click to Remove Me!</button>
+
+		<script>
+
+			var btn = document.getElementById('btn');
+
+			btn.addEventListener('click', clickHandler)
+
+			function clickHandler(event) {
+				//akert
+				console.log(this);
+				console.log(event.target);
+				//this.style.display = 'none';
+			}
+
+		</script>
+
+		<!-- 
+			1. onlclick inline
+			2. btn.onclikc
+			3. addEventListener()
+		 -->
 
 	
 </body>
